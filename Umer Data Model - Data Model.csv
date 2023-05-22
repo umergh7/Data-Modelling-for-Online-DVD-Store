@@ -1,0 +1,27 @@
+Fact Table,,,,,,,,,,,,,
+transaction,type,,,,,,,,,,,,
+PAYMENT_DATE,date,,,,,,,,,,,,
+CUSTOMER_ID,int,,,,,,,,,,,,
+STORE_ID,int,,,,,,,,,,,,
+FILM_ID,int,,,,,,,,,,,,
+STAFF_ID,int,,,,,,,,,,,,
+AMOUNT,numeric,,,,,,,,,,,,
+IS_DECLINE,boolean,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+Dimension Tables,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+Customer,type,,Store,type,,Film,type,,Staff,type,,calendar_dim,
+CUSTOMER_ID,int,,STORE_ID,int,,TITLE,varchar,,FIRST_NAME,varchar,,cal_dt,date
+FIRST_NAME,varchar,,MANAGER_FIRSTNAME,varchar,,DESCRIPTION,varchar,,LAST_NAME,varchar,,day_of_wk_num,int
+LAST_NAME,varchar,,MANAGER_LASTNAME,varchar,,RELEASE_YEAR,varchar,,ADDRESS,varchar,,day_of_wk_desc,varchar(30)
+EMAIL,varchar,,ADDRESS,varchar,,LANGUAGE,varchar,,ADDRESS2,varchar,,yr_num,integer
+CREATE_DATE,date,,ADDRESS 2,varchar,,RENTAL_DURATION,varchar,,DISTRICT,varchar,,wk_num,integer
+ADDRESS,varchar,,COUNTRY,varchar,,RENTAL_RATE,varchar,,CITY,varchar,,yr_wk_num,integer
+ADRESSS 2,varchar,,DISTRICT,varchar,,LENGTH,varchar,,POSTAL_CODE,varchar,,mnth_num,integer
+COUNTRY,varchar,,CITY,varchar,,REPLACEMENT_COST,varchar,,PHONE,varchar,,yr_mnth_num,integer
+DISTRICT,varchar,,POSTAL_CODE,varchar,,RATING,varchar,,PICTURE,varchar,,,
+CITY,varchar,,PHONE,varchar,,SPECIAL_FEATURES,varchar,,EMAIL,varchar,,,
+POSTAL_CODE,varchar,,,,,CATEGORY_NAME,varchar,,USERNAME,varchar,,,
+PHONE,varchar,,,,,ACTOR_FIRST_NAME,varchar,,PASSWORD,varchar,,,
+ACTIVE,boolean,,,,,ACTOR_LAST_NAME,varchar,,ACTIVE,varchar,,,
